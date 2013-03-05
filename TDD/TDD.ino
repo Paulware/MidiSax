@@ -112,6 +112,7 @@ void midiSend(byte stat, byte data1, byte data2) {
 
 void loop ()
 {
+  switchCombination = readValves();
   if (switchCombination != oldSwitch)
   {
     note = getNoteOn (switchCombination);
