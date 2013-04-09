@@ -56,6 +56,8 @@ int getNoteOn ( unsigned long switchCombination )
   int value = -1;
   switch (switchCombination)
   {
+    case 0x0000:
+	  value = 13;
     case 0x0001:
       value = 0;
     break;
